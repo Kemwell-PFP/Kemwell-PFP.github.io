@@ -1,4 +1,3 @@
-
 html
 <!DOCTYPE html>
 <html lang="en">
@@ -20,17 +19,16 @@ html
 </head>
 <body>
   <div id="viewer"></div>
-  <script src="o3dv.min"></script>
+  <script src="o3dv.min.js"></script>
   <script>
     const viewer = new O3DV.Viewer({
       parent: document.getElementById('viewer'),
       options: {
-        showEdges: true, // Show outlines by default
-        backgroundColor: [255, 255, 255],
-        defaultColor: [180, 180, 180]
+        showEdges: true, // Edges (outlines) visible by default
+        backgroundColor: [255, 255, 255], // White background
+        defaultColor: [180, 180, 180] // Grey default model color
       }
     });
   </script>
 </body>
 </html>
-
